@@ -11,11 +11,11 @@
 
   $document.on("dialog-ready", function() {
     if ($(rteSelector).length > 0) {
-      cqDialogSubmitAndFullScreenEventCheckForSourceEditFix();
+      rteSourceEditFix();
     }
   });
 
-  function cqDialogSubmitAndFullScreenEventCheckForSourceEditFix() {
+  function rteSourceEditFix() {
 
     //by default inline rte mode is active when touch ui dialog opens up.
     isInlineDialogActive = true;
